@@ -3,75 +3,91 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <!--<link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">-->
-
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <title>Best US Hikes</title>
     </head>
 
     <body>
         <a class="skip" href="#main">Skip to Main Content</a>
-        <h1>The Best Rated Hikes Across the US!</h1>
+        
         <header>
-            <!-- Have the navigation bar in here
-            Can use a similar nav to hw5    -->
-            <nav> <!-- Display using flex for various screen sizes-->
+        <div id="header">
+            <img id="logo" src="images/hiking_logo.png" alt="Logo that says Hiking">
+            <nav class="desktop_nav"> 
                 <ul>
-                    <li><a href="index.html">Hiking Introduction</a></li>
-                    <li><a href="grid.html">Best US Hikes</ahref></li>
-                    <li><a href="flex.html">Gear for Your Next Hike</a></li>
+                    <li><a class="nav_a" href="index.html">Hiking Introduction</a></li>
+                    <li style="background-color: brown;"><a class="nav_a" href="grid.html">Best US Hikes</ahref></li>
+                    <li><a class="nav_a" href="flex.html">HARDEST US Hikes</a></li>
                 </ul>
             </nav>
-
+            <button class="nav_button">THE BUTTON</button>
+            <div class="nav_sidebar">
+                
+            </div>
+        </div>
         </header>
         <main>
             <div id="main">
-                <p>These are 9 best rated hikes from across the United States as ranked
-                    by <em>AllTrails</em>, an app and website used for cataloging hikes worldwide:
-                    <div class="grid_container">
-                        <ol>
-                            <li>Angels Landing Trail, Zion National Park, Utah
-                                <br>
-                                <img width="50%" src="images/angels_landing.jpg" alt="Angels Landing Trail Image">
-                            </li>
-                            <li>Devils Bridge Trail, Coconino National Forest, Arizona
-                                <br>
-                                <img width="50%" src="images/devils_bridge.jpg" alt="Devils Bridge Trail Image">
-                            </li>
-                            <li>Emerald Lake Trail, Rocky Mountain National Park, Colorado
-                                <br>
-                                <img width="50%" src="images/emerald_lake.jpg" alt="Emerald Lake Trail Image">
-                            </li>
-                            <li>Delicate Arch Trail, Arches National Park, Utah
-                                <br>
-                                <img width="50%" src="images/delicate_arch.jpg" alt="Delicate Arch Trail Image">
-                            </li>
-                            <li>Cathedral Rock Trail, Coconino National Forest, Arizona
-                                <br>
-                                <img width="50%" src="images/cathedral_rock.jpg" alt="Cathedral Rock Trail Image">
-                            </li>
-                            <li>Navajo Loop and Queens Garden Trail, Bryce Canyon National Park, Utah
-                                <br>
-                                <img width="50%" src="images/navajo_loop.jpg" alt="Navajo Loop and Queens Garden Trail Image">
-                            </li>
-                            <li>Rattlesnake Ledge Trail, Rattlesnake Mountain Scenic Area, Washington
-                                <br>
-                                <img width="50%" src="images/rattlesnake_ledge.jpg" alt="Rattlesnake Ledge Trail Image">
-                            </li>
-                            <li>Skyline Trail Loop, Mount Rainier National Park, Washington
-                                <br>
-                                <img width="50%" src="images/skyline_trail.jpg" alt="Skyline Trail Loop Image">
-                            </li>
-                            <li>Vernal and Nevada Falls via Mist Trail, Yosemite National Park, California
-                                <br>
-                                <img width="50%" src="images/vernal_falls.jpg" alt="Vernal Falls waterfall Image">
-                            </li>
-                        </ol>
-                    </div>
-                </p>
+                <div id="grid_info">
+                    <p> These are 9 best rated hikes from across the United States as ranked
+                    by <em>AllTrails</em>, an app and website used for cataloging hikes worldwide.
+                    Click on any of the images below to enlarge it and find out more about that hike.
+                    <br><br>
+                    </p>
+                </div>
 
-            </div>
+                <div class="grid_container">
+                    <div class="grid_item">Angels Landing Trail, <br> Zion National Park, <br> Utah
+                        <br>
+                        <img id="angels" src="images/angels_landing.jpg" alt="Angels Landing Trail Image">
+                    </div>
+                    <div class="grid_item">Devil's Bridge Trail, <br> Coconino National Forest, <br> Arizona
+                        <br>
+                        <img id="devils" src="images/devils_bridge.jpg" alt="Devil's Bridge Trail Image">
+                    </div>
+                    <div class="grid_item">Emerald Lake Trail, <br> Rocky Mountain National Park, <br> Colorado
+                        <br>
+                        <img id="emerald" src="images/emerald_lake.jpg" alt="Emerald Lake Trail Image">
+                    </div>
+                    <div class="grid_item">Delicate Arch Trail, <br> Arches National Park, <br>Utah
+                        <br>
+                        <img id="delicate" src="images/delicate_arch.jpg" alt="Delicate Arch Trail Image">
+                    </div>
+                    <div class="grid_item">Cathedral Rock Trail, <br>Coconino National Forest, <br>Arizona
+                        <br>
+                        <img id="cathedral" src="images/cathedral_rock.jpg" alt="Cathedral Rock Trail Image">
+                    </div>
+                    <div class="grid_item">Navajo Loop and Queens Garden Trail, <br>Bryce Canyon National Park, <br>Utah
+                        <br>
+                        <img id="navajo" src="images/navajo_loop.jpg" alt="Navajo Loop and Queens Garden Trail Image">
+                    </div>
+                    <div class="grid_item">Rattlesnake Ledge Trail, <br>Rattlesnake Mountain Scenic Area, <br>Washington
+                        <br>
+                        <img id="rattlesnake" src="images/rattlesnake_ledge.jpg" alt="Rattlesnake Ledge Trail Image">
+                    </div>
+                    <div class="grid_item">Skyline Trail Loop, <br>Mount Rainier National Park, <br>Washington
+                        <br>
+                        <img id="skyline" src="images/skyline_trail.jpg" alt="Skyline Trail Loop Image">
+                    </div>
+                    <div class="grid_item">Vernal and Nevada Falls via Mist Trail, <br>Yosemite National Park, <br>California
+                        <br>
+                        <img id="vernal" src="images/vernal_falls.jpg" alt="Vernal Falls waterfall Image">
+                    </div>
+                </div> <!--end of grid container-->
+                <br><br>
+                <div class="info_zone">
+                    <img id="info_img" src="" alt="">
+                    <p id="info_text"></p>
+                    <!-- When you click on an image, jump to this spot and have an eventlistener
+                    that changes the innerhtml of this to be info on the trail and have a blank
+                    image slot that gets set to the one you chose-->
+
+                    <!-- Possibly also have the google API in here too? or in a div after this one-->
+                </div>
+
+            </div><!-- Main div-->
         </main>
 
         <br><br><br>
@@ -79,5 +95,5 @@
             <p>SI-339 Final Project, Copyright Nathan Curdo</p>
         </footer>
     </body>
-
+    <script src="site.js"></script>
 </html>

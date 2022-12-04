@@ -3,58 +3,70 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <!--<link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">-->
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
         <title>Hiking Webpage</title>
     </head>
 
-    <body>
+    <body class="hiking_main">
         <a class="skip" href="#main">Skip to Main Content</a>
-        <h1>Hiking</h1>
         <header>
+        <div id="header">
             <!-- Have the navigation bar in here
             Can use a similar nav to hw5    -->
-            <nav> <!-- Display using flex for various screen sizes-->
+            <img id="logo" src="images/hiking_logo.png" alt="Logo that says Hiking">
+            <nav class="desktop_nav"> <!-- Display using flex for various screen sizes-->
                 <ul>
-                    <li><a href="index.html">Hiking Introduction</a></li>
-                    <li><a href="grid.html">Best US Hikes</ahref></li>
-                    <li><a href="flex.html">Gear for Your Next Hike</a></li>
+                    <li style="background-color: brown;"><a class="nav_a" href="index.html">Hiking Introduction</a></li>
+                    <li><a class="nav_a" href="grid.html">Best US Hikes</ahref></li>
+                    <li><a class="nav_a" href="flex.html">HARDEST US Hikes</a></li>
+                    <!-- CHANGE THE GEAR PAGE TO A MOST DIFFICULT HIKES PAGE (maybe have a hover or something for stats about them)-->
+                    <!--USE THE GOOGLE MAP API ON WEBSITE FOR EACH HIKE, MAYBE WHEN YOU CLICK ON IMAGE OR SOMETHIN IT ENLARGES WITH INFO AND LOCATION-->
                 </ul>
             </nav>
-
+        </div>
         </header>
         <main>
             <div id="main">
-                <p>This webpage is the place to find information about hiking whatever you may need</p>
-                <p> Here we've got:
-                <ul>
-                    <li>What is Hiking?</li>
-                    <li>Best Hikes Across the US</li>
-                    <li>What to Bring for Your Next Hike</li>
-                </ul>
-                </p>
-                <p>To start off, hiking is the activity of going on long walks, 
-                    often through the country or woods, but is not limited to these areas.
-                    <br><br>
-                    Hiking can be as strenous as you'd like it to be, with simple hikes like
-                    trekking through a nearby park, or pushing yourself to the limit on a multi-day
-                    expedition through the mountains.
-                    <br><br>
-                    You need not any background or prior experience to start your first hike, just
-                    search for a place and go (as long as you have the appropriate gear)
-                    <br><br>
-                    To continue to learn more information, use the navigation above to find
-                    details about some of the best hikes across the United States, and the 
-                    gear you may want to bring on your next hike.
-                </p>
+                <div id="hiking_intro">
+                    <h1>What is Hiking?</h1>
+                    <p> To start off, hiking is the activity of going on long walks, 
+                        often through the country or woods, but is not limited to these areas.
+                        <br><br>
+                        Hiking can be as strenous as you'd like it to be, with simple hikes like
+                        trekking through a nearby park, or pushing yourself to the limit on a multi-day
+                        expedition through the mountains.
+                        <br><br>
+                        You need not any background or prior experience to start your first hike, just
+                        search for a place and go (as long as you have the appropriate gear)
+                        <br><br>
+                    </p>
+                </div>
+                <div id="hiking_search">
+                    <h1>Looking for the Perfect Next Hike?</h1>
+                    <p> Look no further than here, we've got details on some of the highest
+                        rated trails across the United States for their beauty or atmosphere.
+                        <br><br>
+                        Navigate to the "Best US Hikes" page to learn more.
+                    </p>
+                    </div>
+                <div id="hiking_chall">
+                    <h1>Looking to Challenge Yourself?</h1>
+                    <p> For you adrenaline seekers, we have a list of some of the most DANGEROUS 
+                        hikes you can legally do within the United States. 
+                        <br><br>
+                        Navigate to the "Hardest US Hikes" page to learn more about these thrilling adventures.
+                    </p>
+                </div>
+                
             </div>
         </main>
 
         <br><br><br>
         <footer>
-            <p>SI-339 Final Project, Copyright Nathan Curdo</p>
+            <p>SI-339 Final Project, &copy Nathan Curdo</p>
         </footer>
     </body>
 
