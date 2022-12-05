@@ -3,96 +3,103 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <title>Best US Hikes</title>
     </head>
 
-    <body>
+    <body class="grid_main">
         <a class="skip" href="#main">Skip to Main Content</a>
         
         <header>
         <div id="header">
             <img id="logo" src="images/hiking_logo.png" alt="Logo that says Hiking">
-            <nav class="desktop_nav"> 
-                <ul>
-                    <li><a class="nav_a" href="index.html">Hiking Introduction</a></li>
-                    <li style="background-color: brown;"><a class="nav_a" href="grid.html">Best US Hikes</ahref></li>
-                    <li><a class="nav_a" href="flex.html">HARDEST US Hikes</a></li>
-                </ul>
+            <nav> 
+                <a class="nav_a" href="index.html">Hiking Introduction</a>
+                <a style="background-color: rgb(160,82,45); border: 5px solid black;" class="nav_a" href="grid.html">Best US Hikes</a>
+                <a class="nav_a" href="flex.html">Common Hiking Gear</a>
             </nav>
-            <button class="nav_button">THE BUTTON</button>
-            <div class="nav_sidebar">
-                
-            </div>
         </div>
         </header>
-        <main>
-            <div id="main">
-                <div id="grid_info">
-                    <p> These are 9 best rated hikes from across the United States as ranked
-                    by <em>AllTrails</em>, an app and website used for cataloging hikes worldwide.
-                    Click on any of the images below to enlarge it and find out more about that hike.
-                    <br><br>
-                    </p>
-                </div>
-
-                <div class="grid_container">
-                    <div class="grid_item">Angels Landing Trail, <br> Zion National Park, <br> Utah
-                        <br>
-                        <img id="angels" src="images/angels_landing.jpg" alt="Angels Landing Trail Image">
-                    </div>
-                    <div class="grid_item">Devil's Bridge Trail, <br> Coconino National Forest, <br> Arizona
-                        <br>
-                        <img id="devils" src="images/devils_bridge.jpg" alt="Devil's Bridge Trail Image">
-                    </div>
-                    <div class="grid_item">Emerald Lake Trail, <br> Rocky Mountain National Park, <br> Colorado
-                        <br>
-                        <img id="emerald" src="images/emerald_lake.jpg" alt="Emerald Lake Trail Image">
-                    </div>
-                    <div class="grid_item">Delicate Arch Trail, <br> Arches National Park, <br>Utah
-                        <br>
-                        <img id="delicate" src="images/delicate_arch.jpg" alt="Delicate Arch Trail Image">
-                    </div>
-                    <div class="grid_item">Cathedral Rock Trail, <br>Coconino National Forest, <br>Arizona
-                        <br>
-                        <img id="cathedral" src="images/cathedral_rock.jpg" alt="Cathedral Rock Trail Image">
-                    </div>
-                    <div class="grid_item">Navajo Loop and Queens Garden Trail, <br>Bryce Canyon National Park, <br>Utah
-                        <br>
-                        <img id="navajo" src="images/navajo_loop.jpg" alt="Navajo Loop and Queens Garden Trail Image">
-                    </div>
-                    <div class="grid_item">Rattlesnake Ledge Trail, <br>Rattlesnake Mountain Scenic Area, <br>Washington
-                        <br>
-                        <img id="rattlesnake" src="images/rattlesnake_ledge.jpg" alt="Rattlesnake Ledge Trail Image">
-                    </div>
-                    <div class="grid_item">Skyline Trail Loop, <br>Mount Rainier National Park, <br>Washington
-                        <br>
-                        <img id="skyline" src="images/skyline_trail.jpg" alt="Skyline Trail Loop Image">
-                    </div>
-                    <div class="grid_item">Vernal and Nevada Falls via Mist Trail, <br>Yosemite National Park, <br>California
-                        <br>
-                        <img id="vernal" src="images/vernal_falls.jpg" alt="Vernal Falls waterfall Image">
-                    </div>
-                </div> <!--end of grid container-->
+        <main id="main">
+            <div id="grid_info">
+                <h1 style="padding:5px 0px 10px;">Best Hikes Across the US</h1>
+                <p> These are 9 best rated hikes from across the United States as ranked
+                by <em>AllTrails</em>, an app and website used for cataloging hikes worldwide.
                 <br><br>
-                <div class="info_zone">
-                    <img id="info_img" src="" alt="">
-                    <p id="info_text"></p>
-                    <!-- When you click on an image, jump to this spot and have an eventlistener
-                    that changes the innerhtml of this to be info on the trail and have a blank
-                    image slot that gets set to the one you chose-->
+                Click on any of the images below to enlarge it and find out more about that hike.
+                Clicking on the image will also prompt the &copy Google Maps feature to locate that trail
+                after a couple seconds.
+                </p>
+            </div>
 
-                    <!-- Possibly also have the google API in here too? or in a div after this one-->
+            <div class="grid_container">
+                <div class="grid_item">Angels Landing Trail, <br> Zion National Park, <br> Utah
+                    <br>
+                    <img id="angels" src="images/angels_landing.jpg" alt="Angels Landing Trail Image" tabindex="0">
                 </div>
+                <div class="grid_item">Devil's Bridge Trail, <br> Coconino National Forest, <br> Arizona
+                    <br>
+                    <img id="devils" src="images/devils_bridge.jpg" alt="Devil's Bridge Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Emerald Lake Trail, <br> Rocky Mountain National Park, <br> Colorado
+                    <br>
+                    <img id="emerald" height="60%" src="images/emerald_lake.jpg" alt="Emerald Lake Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Delicate Arch Trail, <br> Arches National Park, <br>Utah
+                    <br>
+                    <img id="delicate" src="images/delicate_arch.jpg" alt="Delicate Arch Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Cathedral Rock Trail, <br>Coconino National Forest, <br>Arizona
+                    <br>
+                    <img id="cathedral" src="images/cathedral_rock.jpg" alt="Cathedral Rock Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Navajo Loop and Queens Garden Trail, Bryce Canyon National Park, <br>Utah
+                    <br>
+                    <img id="navajo" src="images/navajo_loop.jpg" alt="Navajo Loop and Queens Garden Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Rattlesnake Ledge Trail, <br>Rattlesnake Mountain Scenic Area, <br>Washington
+                    <br>
+                    <img id="rattlesnake" src="images/rattlesnake_ledge.jpg" alt="Rattlesnake Ledge Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Skyline Loop Trail, <br>Mount Rainier National Park, <br>Washington
+                    <br>
+                    <img id="skyline" src="images/skyline_trail.jpg" alt="Skyline Loop Trail Image" tabindex="0">
+                </div>
+                <div class="grid_item">Vernal and Nevada Falls via Mist Trail, Yosemite National Park, <br>California
+                    <br>
+                    <img id="vernal" src="images/vernal_falls.jpg" alt="Vernal Falls Waterfall Image" tabindex="0">
+                </div>
+            </div> <!--end of grid container-->
+            <br><br>
+            <div class="info_zone">
+                <img id="info_img" src="" alt="">
+                <p id="info_text"></p>
+                <!-- When you click on an image, jump to this spot and have an eventlistener
+                that changes the innerhtml of this to be info on the trail and have a blank
+                image slot that gets set to the one you chose-->
+                
+                <!-- Possibly also have the google API in here too? or in a div after this one-->
+            </div>
+            <iframe id="google_map"
+                title="Embedded Google Maps Location of Trails"
+                width="90%"
+                height="450"
+                style="border: 3px solid black; margin: 30px auto; border-radius: 10px; display: block;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDlHP7EHxTU41AFvb3dBLcgMlEwqPHA6HU&q=The+Diag,Ann+Arbor+MI">
+            </iframe>
 
-            </div><!-- Main div-->
         </main>
 
         <br><br><br>
         <footer>
-            <p>SI-339 Final Project, Copyright Nathan Curdo</p>
+            <p>SI-339 Final Project, &copy Nathan Curdo <br> Trail Info from &copy 2022 AllTrails, LLC All Rights Reserved</p>
         </footer>
     </body>
     <script src="site.js"></script>

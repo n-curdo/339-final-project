@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -10,69 +12,118 @@
         <title>Hardest US Hikes</title>
     </head>
 
-    <body>
+    <body class="flex_main">
         <a class="skip" href="#main">Skip to Main Content</a>
+
         <header>
         <div id="header">
             <img id="logo" src="images/hiking_logo.png" alt="Logo that says Hiking">
-            <nav class="desktop_nav">
-                <ul>
-                    <li><a class="nav_a" href="index.html">Hiking Introduction</a></li>
-                    <li><a class="nav_a" href="grid.html">Best US Hikes</ahref></li>
-                    <li style="background-color: brown;"><a class="nav_a" href="flex.html">HARDEST US Hikes</a></li>
-                </ul>
+            <nav>
+                <a class="nav_a" href="index.html">Hiking Introduction</a>
+                <a class="nav_a" href="grid.html">Best US Hikes</a>
+                <a style="background-color: rgb(160,82,45);border: 5px solid black;" class="nav_a" href="flex.html">Common Hiking Gear</a>
             </nav>
         </div>
         </header>
 
-        <main>
-            <h1>Hardest Hikes in the US</h1>
-            <div id="main">
-                <p>These are some of the most common gear brought along for hikes,
-                    according to <em>REI</em>, a well known hiking and outdoor accessories
-                    store, which may vary based on hike length:
-                    <div class="flex_container">
-                        <p id="flex_item">The Maze
-                            <br>
-                            <img width="50%" src="images/hiking_backpack.png" alt="Hiking Backpack Image">
-                        </p>
-                        <p id="flex_item">Hiking Boots
-                            <br>
-                            <img width="50%" src="images/hiking_boots.jpg" alt="Hiking Boots Image">
-                        </p>
-                        <p id="flex_item">Map and Compass
-                            <br>
-                            <img width="50%" src="images/map&compass.jpg" alt="Map and Compass Image">
-                        </p>
-                        <p id="flex_item">First Aid Kit
-                            <br>
-                            <img width="50%" src="images/first_aid_kit.png" alt="First-Aid Kit Image">
-                        </p>
-                        <p id="flex_item">Knife or Multi-tool
-                            <br>
-                            <img width="50%" src="images/multi_tool.jpg" alt="Multi-tool Image">
-                        </p>
-                        <p id="flex_item">Sunscreen
-                            <br>
-                            <img width="50%" src="images/sunscreen.jpg" alt="Sunscreen Image">
-                        </p>
-                        <p id="flex_item">Insect Repellent
-                            <br>
-                            <img width="50%" src="images/bug_spray.png" alt="Bug Spray Image">
-                        </p>
-                        <p id="flex_item">Headlamp or Flashlight
-                            <br>
-                            <img width="50%" src="images/headlamp.jfif" alt="Headlamp Image">
-                        </p>
-                        <p id="flex_item">Extra Food and Water
-                            <br>
-                            <img width="50%" src="images/food_water.jpg" alt="Food and Water Image">
-                        </p>
-                    </div>
-
+        <main id="main">
+            <div id="flex_info">
+                <h1 style="padding:5px 0px 10px">Common Hiking Essentials</h1>
+                <p>Looking to prepare for your next hike? This page has got you covered with all of the 
+                essentials you could ask for. <br><br> These are some of the most common gear brought along for hikes,
+                according to <em>REI</em>, a well known hiking and outdoor accessories
+                store, which may vary based on hike length. <br><br> Click on any of the images below to
+                learn more about that hiking accessory.
                 </p>
-
             </div>
+            <div class="flex_container">
+                <div id="flex_item">Hiking Backpack
+                    <br>
+                    <img id="backpack" width="50%" src="images/hiking_backpack.png" alt="Hiking Backpack Image" tabindex="0">
+                    <p style="display: none;" id="backpack_info"> One of the most important items for going on a hike is a hiking backpack. <br><br>
+                        The backpack pictured is one for longer hikes allowing you to store lots of
+                        extra clothing and special items. <br><br> The backpack you may choose may be smaller or
+                        even larger depending on the route you choose.
+                    </p>
+                </div>
+                <div id="flex_item">Hiking Boots
+                    <br>
+                    <img id="boots_img" width="50%" src="images/hiking_boots.jpg" alt="Hiking Boots Image" tabindex="0">
+                    <p style="display:none;" id="boots_info"> Probably the most important accessories
+                        for going hiking would be proper footwear. <br><br> Now for some hikes such as those that are
+                        shorter in distance or on paved trails, a good pair of sneakers is all that is necessary.
+                        But for any long distance trail that is over rough or uneven terrain, a pair of hiking
+                        boots can go a long way. <br><br> Boots help prevent you from turning your ankle over roots or rocks
+                        as well as providing stronger grip on more slick surfaces. 
+
+                    </p>
+                </div>
+                <div id="flex_item">Map and Compass
+                    <br>
+                    <img id="map_img" width="50%" src="images/map&compass.jpg" alt="Map and Compass Image" tabindex="0">
+                    <p style="display:none;" id="map_info"> An accessory limited to those long and depp-woods hike,
+                        a map and compass is an essential tool for the avid hiker.<br><br> For those beginner hikers who wish
+                        to stay on marked trails or in areas not far from roads this is not as important, but if you wish
+                        to go deep-woods hiking or in areas with limited cellular connection you're going to want this.
+                    </p>
+                </div>
+                <div id="flex_item">First Aid Kit
+                    <br>
+                    <img id="aid_img" width="50%" src="images/first_aid_kit.png" alt="First-Aid Kit Image" tabindex="0">
+                    <p style="display:none;" id="aid_info"> Another item that depends on the length of your hike
+                        is the quality of first aid kit you bring along with you. <br><br> For any hike you should at least
+                        have the basics of antibiotic ointment and bandages since cuts and scrapes can occur anytime.<br><br>
+                        But if you are farther from the assistance of medical professionals, you should look into having
+                        a large first-aid kit capable of dealing with larger injuries.
+                    </p>
+                </div>
+                <div id="flex_item">Knife or Multi-tool
+                    <br>
+                    <img id="knife_img" width="50%" src="images/multi_tool.jpg" alt="Multi-tool Image" tabindex="0">
+                    <p style="display:none;" id="knife_info"> A multi-tool or knife, your preference on which,
+                        is a key tool for hikers and individual's alike. <br><br> While oftentimes you may not
+                        need a multi-tool, having it on hand will provide you with many tools necessary during 
+                        both hiking and your daily life.
+                    </p>
+                </div>
+                <div id="flex_item">Sunscreen
+                    <br>
+                    <img id="sunscreen_img" width="50%" src="images/sunscreen.jpg" alt="Sunscreen Image" tabindex="0">
+                    <p style="display:none;" id="sunscreen_info"> A daily essential, sunscreen is always
+                        a necessity whether you're hiking on the sunniest or cloudiest day. <br><br> Contrary
+                        to popular belief you can still receive UV sun damage on cloudy days so be sure to 
+                        always have some sunscreen handy especially when being outdoors for hours.
+                    </p>
+                </div>
+                <div id="flex_item">Insect Repellent
+                    <br>
+                    <img id="insect_img" width="50%" src="images/bug_spray.png" alt="Bug Spray Image" tabindex="0">
+                    <p style="display:none;" id="insect_info"> When out in the woods, you should always 
+                        have some insect repellent, or bug spray, handy. <br><br> It helps keep away 
+                        mosquitoes and other pests you may encounter which is essential for any woodsy 
+                        hike.
+                    </p>
+                </div>
+                <div id="flex_item">Headlamp or Flashlight
+                    <br>
+                    <img id="light_img" width="50%" src="images/headlamp.jfif" alt="Headlamp Image" tabindex="0">
+                    <p style="display:none;" id="light_info"> If you plan on hiking anytime before or after
+                        sunset, you're going to want to bring a headlamp or a flashlight. <br><br> If your hike
+                        is going to be a long one you may want some extra batteries as well to ensure your light
+                        stays on.
+                    </p>
+                </div>
+                <div id="flex_item">Extra Food and Water
+                    <br>
+                    <img id="food_img" width="50%" src="images/food_water.png" alt="Food and Water Image" tabindex="0">
+                    <p style="display:none;" id="food_info"> No matter the length of your hike, be sure to
+                        always have extra snacks and water, always more than you originally plan. <br><br> 
+                        This is especially important for longer hikes when the hike could always go longer 
+                        than originally planned and you always want to stay hydrated and fueled.
+                    </p>
+                </div>
+            </div>
+
         </main>
 
         <br><br><br>
@@ -80,5 +131,5 @@
             <p>SI-339 Final Project, Copyright Nathan Curdo</p>
         </footer>
     </body>
-
+    <script src="flex.js"></script>
 </html>
