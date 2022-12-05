@@ -21,31 +21,42 @@
     top: 20px;
 }
 
-.desktop_nav{
-    display: none;
+/*--------BEGIN MOBILE DESIGN-------*/
+/* Have mobile design set the logo to the center of the page and the nav bar below it
+    stacked on top of each other*/
+
+#logo{
+    display: block;
+    margin: 0px auto;
 }
 
-.nav_button{
-    background-color: rgb(147, 196, 125); 
-    position: fixed; 
-    z-index: 9;
-    right: 0;
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.nav_sidebar{
-    background-color: red; 
-    width: 100px; 
-    height: 100%; 
-    z-index: 8; 
-    position: fixed;
-    right: 0;
+nav > a{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(147, 196, 125);
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
+main{
+    padding-top: 100px;
+}
+
+/*--------------BEGIN MAIN PAGE CONTENT (for mobile)-------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&----*/
 #hiking_intro, #hiking_search, #hiking_chall{
     border: 4px solid black;
     background-color: rgb(147, 196, 125);
     border-radius: 15px;
-    margin: 100px 0px;
+    margin: 50px 0px;
     width: 75%;
     padding: 10px;
     text-align: center;
@@ -71,21 +82,26 @@ div > h1{
     font-weight: bold;
     font-size: x-large;
 }
+/*---------------END MAIN PAGE CONTENT----&&&&&&&&&&&&&&&&&&&&&&&&&&&&&---------*/
 
-.hiking_main{
+.hiking_main, .grid_main, .flex_main{
     background-image: url("../images/waterfall_background.webp");
     background-size: cover;
+    margin: 10px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer{
-    background-color: grey;
+    background-color: rgb(178, 178, 178);
     clear: left;
     padding: 5px;
 }
 
+/*----------------BEGIN GRID PAGE CONTENT (for mobile)---&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&------------*/
 .grid_container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 }
 
 .grid_item{
@@ -102,12 +118,18 @@ footer{
     border: 3px solid black;
 }
 
+.grid_item > img:hover, .grid_item > img:focus{
+    width: 90%;
+    border: 5px solid rgb(160,82,45);
+}
+
 #grid_info{
     text-align: center;
-    background-color: grey;
+    background-color: rgb(178, 178, 178);
     margin: 50px 50px;
     border: 4px solid black;
     border-radius: 15px;
+    padding: 10px;
 }
 
 img{
@@ -119,15 +141,17 @@ img{
     border-radius: 15px;
     background-color: rgb(147, 196, 125);
     display: none;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto;
+    width: 95%;
+    margin: 20px auto;
 }
 
 #info_img{
     display: none;
     border: 3px solid black;
     border-radius: 10px;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 
 #info_text{
@@ -136,8 +160,66 @@ img{
     padding: 10px 10px;
 }
 
+#map{
+    border: 3px solid black;
+    width: 100%;
+    height: 400px;
+}
+/*-------------END GRID PAGE CONTENT (for mobile design)------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--------*/
 
-@media only screen and (min-width: 800px){ /*For desktop screens*/
+
+/*-------------BEGIN FLEX PAGE CONTENT (for mobile design)---&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-*/
+#flex_info{
+    background-color: rgb(178, 178, 178);
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 70%;
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.flex_container{ /*For mobile: single column, tablet: 2 columns, laptop: 3 columns*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#flex_item{
+    width: 75%;
+    background-color: rgb(147, 196, 125);
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: large;
+    padding: 15px;
+}
+
+#flex_item > img{
+    border-radius: 15px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    margin: 5px auto;
+}
+
+#flex_item > img:hover, #flex_item > img:focus{
+    border: 5px solid rgb(160,82,45);
+}
+
+
+/*-------------END FLEX PAGE CONTENT (for mobile design)-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+
+@media only screen and (min-width: 500px) { /*----For TABLET screens------*/
+    /* KEEP tablet view as is with stack on top of each other to right of logo*/
+    #logo{
+        margin: 0px 0px;
+    }
+
     #header{
         /*background-color: grey;*/
         display: flex;
@@ -145,33 +227,94 @@ img{
         justify-content: space-between;
     }
 
-    .desktop_nav {
+    nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-end;
     }
     
-    .desktop_nav > ul > li{
+    nav > a{
         text-align: center;
         padding: 5px;
         border-radius: 10px;
         background-color: rgb(147, 196, 125);
         margin: 5px;
-    }
-    
-    .nav_a{
         color: black;
         text-decoration: none;
         font-weight: bold;
     }
 
-    .nav_button{
-        display: none;
+    .grid_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .nav_sidebar{
-        display: none;
+    .grid_item:nth-child(odd){
+        grid-column: 1 / span 2;
+        display: inline-block;
+    }
+    .grid_item:nth-child(even){
+        grid-column: 3 / span 2;
     }
 
+    .grid_container > .grid_item:last-child{
+        grid-column: 2 / 4;
+    }
 
+    .info_zone{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .flex_container{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #flex_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 800px){ /*-----FOR LAPTOP SCREENS------*/
+    /* FOR LAPTOP spread the nav links out along the right side of the logo as more block buttons than bars*/
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav > a{
+        height: 100%;
+        padding: 25px 5px;
+        line-height: 25px;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .grid_container{
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid_item:nth-child(odd){
+        grid-column: auto;
+    }
+    .grid_item:nth-child(even){
+        grid-column: auto;
+    }
+
+    .grid_container > .grid_item:last-child{
+        grid-column: auto;
+    }
+
+    #flex_item{
+        width: 30%;
+
+    }
 }
